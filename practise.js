@@ -51,3 +51,13 @@ const regex= /^\((\d{3}\))\s(\d{3})(-\d{4})$/
 console.log(validPhoneNumber("(123) 456-7890"));
 console.log(validPhoneNumber("(1111)555 2345"));
 console.log(validPhoneNumber("(098) 123 4567"));
+
+//https://www.codewars.com/kata/52597aa56021e91c93000cb0/train/javascript
+
+function moveZeros(arr) {
+  const zeros=arr.filter(num=>num===0);
+  const nonZeros=arr.filter(num=>num!==0);
+ return nonZeros.concat(zeros);
+}
+console.log(moveZeros([1,2,0,1,0,1,0,3,0,1]));
+console.log(moveZeros([1,2,0,1,3,0,0,5,6]));
