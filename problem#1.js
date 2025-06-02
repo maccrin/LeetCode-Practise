@@ -33,21 +33,3 @@ function twoSum(nums, target) {
 console.log(twoSum([-10, -3, 4, 9, 11, 1],1));
 console.log(twoSum([3, 2, 4, 3],6));
 console.log(twoSum([1, 3, 5, 6, 8],14));
-
-//Remove Duplicates from Sorted Array 32
-
-function removeDuplicates(nums) {
-  let result=[];
-  let length=nums.length;
-    if(nums.length===1) return nums.length+"\n"+nums.toString()
-
-    for(let i=0;i<length;i=nums.lastIndexOf(nums[i])+1){
-result.push(nums[i]);
-    }
-    return result.length+"\n"+result.join(' ');
-}
-
-console.log(removeDuplicates([0, 0 ,1, 1, 1, 2, 2, 3 ,3, 4,]));
-console.log(removeDuplicates([7, 7 ,7, 7, 7, 7]));
-console.log(removeDuplicates([1,2,3,4,5]));
-console.log(removeDuplicates([7]));
