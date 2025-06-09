@@ -6,7 +6,6 @@ class ListNode{
         this.next=null;
     }
 }
-
 function reverseList(input) {
     // put your function here
     // const lines = input.trim().split('\n');
