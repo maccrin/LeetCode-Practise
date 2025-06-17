@@ -3,19 +3,23 @@ function searchRange(nums, target) {
     // Write your code here
     let l=0;
     let r=nums.length-1;
-    let mid=Math.ceil((l + r) / 2);
-
+    let mid=Math.floor((l + r) / 2);
+let res=[-1,-1];
     while(l<=r){
-        if(target<=nums[mid])r=mid
-        else if(target>nums[mid]){
-            l=mid+1;
-        }
-        else if(target)
-    }
-    return [-1, -1];
+       if(target>=nums[mid]){
+l=mid;
+res=[l,r]
+       }
+
+       if(target<=nums[mid]){
+r=mid-1;
+res=[l,r];
+       } 
+       mid=Math.ceil(l+r)/2;
 }
 
-
+ return res;
+}
 console.log(searchRange([5,7,7,8,8,10],8));
 console.log(searchRange([5, 7,7,8,8,10],6));
 console.log(searchRange([1],1));
