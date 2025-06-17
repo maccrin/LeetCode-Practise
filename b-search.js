@@ -10,16 +10,12 @@ function searchInsertPosition(nums, target) {
         if(target<nums[mid]){
             r=mid-1;
         }
-
          if(target>nums[mid]){
             l=mid+1;
         }
         if(target===nums[mid]) return mid;
-
         mid=Math.ceil((l + r) / 2);
     }
-
-
     return l;
 }
 
