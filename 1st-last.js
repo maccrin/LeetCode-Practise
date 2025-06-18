@@ -9,6 +9,7 @@ let res=[-1,-1];
     while(l<=r){
         let mid=Math.floor(l+(r-l)/2);
      if(target===nums[mid]){
+       res[1]=mid;
 while(mid >0 && nums[mid]===nums[mid-1])mid--
 res[0]=mid;
 break;
