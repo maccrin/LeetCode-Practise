@@ -10,7 +10,7 @@ function isValidSudoku(board) {
       const cell = board[i][j];
       if (cell==='.')continue;
       const box = Math.floor(i/3)*3 + Math.floor(j/3);
-      console.log(rows_set, cols_set, boxes_set)
+    console.log(box)
       if (rows_set[i].has(cell) || cols_set[j].has(cell) || boxes_set[box].has(cell))return false;
       rows_set[i].add(cell);
       cols_set[j].add(cell);
