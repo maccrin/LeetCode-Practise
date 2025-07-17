@@ -10,8 +10,7 @@ for(let j=left;j<=right;j++){
 }
   result.push(sum)   
 }
-        
-        return result; // placeholder
+             return result; // placeholder
     }
 
     console.log(sumRange([[-2, 0, 3, -5, 2, -1], [0, 2], [2, 5], [0, 5]]));
